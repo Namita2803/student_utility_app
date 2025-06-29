@@ -1,5 +1,4 @@
-# student_utility_app
-Student Utility App – A Flutter mobile application designed for students to effectively manage their academic routine, featuring a timetable interface, to-do list, note-taking functionality, and user profile management.
+
 # Student Utility App
 
 Student Utility App is a cross-platform mobile application built with the Flutter framework to assist students in organizing their academic routines. It includes the following complete features and technology details.
