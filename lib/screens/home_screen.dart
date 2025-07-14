@@ -4,6 +4,7 @@ import 'todo_screen.dart';
 import 'attendance_screen.dart';
 import 'grades_screen.dart';
 import 'profile_screen.dart';
+import '../widgets/bot_assistant.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -51,7 +52,17 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-        child: _pages[_currentIndex],
+        child: Stack(
+          children: [
+            _pages[_currentIndex],
+            if (_currentIndex == 0)
+              Positioned(
+                top: 32,
+                right: 32,
+                child: BotAssistant(),
+              ),
+          ],
+        ),
       ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
